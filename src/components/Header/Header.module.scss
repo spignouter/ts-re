@@ -1,0 +1,58 @@
+.header{
+	display: flex;
+	justify-content: space-around;
+	font-weight: 450;
+	font-style: normal;
+	font-size: 1.8rem;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+	backdrop-filter: blur(4px);
+	&__logo{
+		flex-grow: 4;
+		padding: 1.2rem 6.8rem 1rem 6rem;
+	}
+
+	&__nav{
+		flex-grow: 2;
+		border-right: 1px solid grey;
+	}
+
+	&__list{
+		height: 100%;
+		margin: 0;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	&__item{
+	display: block;
+		a{
+		text-decoration: none;
+			&:active, &:visited, &:link {
+						color: black;
+			}
+		}	
+	}
+	&__user{
+		flex-grow: 1;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+
+.imgLogo
+{	width: 6.1rem;
+	height: 5.6rem;
+	display: block;}
+
+.imgUser
+{	width: 5rem;
+	height: 5rem;
+	display: block;}
+
+.iconVector1
+	{cursor: pointer;}
+.iconVector2
+	{cursor: pointer;}
+.iconVector3
+	{cursor: pointer;}

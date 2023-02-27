@@ -1,0 +1,110 @@
+.sectionApartments {
+  font-size: 1.8rem;
+  .apartments {
+    gap: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: auto auto auto auto;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: 'apartments-title . . apartments-buttons-1' 'apartments-status apartments-status apartments-status apartments-status' 'apartments-tables apartments-tables apartments-tables apartments-tables' '. . apartments-buttons-2 apartments-buttons-3';
+    .title {
+      grid-area: apartments-title;
+      padding: 6rem 0rem 4rem 0rem;
+    }
+    .btn {
+      //   background: transparent;
+      width: 20rem;
+      height: 6rem;
+      background: #dcdcdc;
+      display: block;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      padding: 1.6rem 2.2rem;
+      font-size: 1.8rem;
+      letter-spacing: 0.05rem;
+      border-radius: 8px;
+    }
+    .buttons1 {
+      grid-area: apartments-buttons-1;
+      align-self: center;
+    }
+    .buttons3 {
+      grid-area: apartments-buttons-3;
+    }
+    .buttons2 {
+      grid-area: apartments-buttons-2;
+    }
+
+    .status {
+      grid-area: apartments-status;
+      font-size: 2.4rem;
+      color: #8b8b8b;
+      padding: 1rem 0rem;
+      .box {
+        width: 16.4rem;
+        height: 5rem;
+        display: inline-flex;
+        align-items: center;
+      }
+      .box1 {
+        width: 5rem;
+        height: 5rem;
+        background: #bb2649;
+        border: 1px solid gray;
+      }
+      .box2 {
+        width: 5rem;
+        height: 5rem;
+        background: #bb7f26;
+        border: 1px solid gray;
+      }
+      .box3 {
+        width: 5rem;
+        height: 5rem;
+        background: #a6e2ef;
+        border: 1px solid gray;
+      }
+      .box4 {
+        width: 5rem;
+        height: 5rem;
+        background: #fcfcfc;
+        border: 1px solid gray;
+      }
+    }
+    // .apartments-colums
+    // 	display: grid
+    // 	grid-template-columns: repeat(3, minmax(10%,20%))
+    // 	justify-content: center
+    // 	gap: 3rem
+
+    .tables {
+      grid-area: apartments-tables;
+      display: flex;
+      gap: 5rem;
+    }
+
+    .table {
+      border-collapse: collapse;
+      text-align: center;
+      .floor {
+        width: 95px;
+        height: 95px;
+        border: 1px solid black;
+        color: #dcdcdc;
+      }
+
+      .number {
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+      }
+    }
+
+    .selected_cell {
+      background: #bb2649;
+    }
+  }
+}
